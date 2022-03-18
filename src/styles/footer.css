@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0vw;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+}
+
+footer img {
+    width: 23px;
+    height: 23px; 
+}
+  
+footer p {
+    align-items: center;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    line-height: 22px; 
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

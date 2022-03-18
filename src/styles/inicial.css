@@ -1,15 +1,15 @@
-.App-logo {
+.inicial-logo {
   width: 110px;
   height: 130px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s cubic-bezier(0.0, 0.0, 1.0, 1.0);
+  .inicial-logo {
+    animation: inicial-logo-spin infinite 20s cubic-bezier(0.0, 0.0, 1.0, 1.0);
   }
 }
 
-@keyframes App-logo-spin {
+@keyframes inicial-logo-spin {
   from {
     transform: rotateX(0deg);
   }
@@ -18,7 +18,7 @@
   }
 }
 
-.App-header {
+.inicial-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,21 +26,21 @@
   margin-top: 120px;
 }
 
-.App-header p {
+.inicial-header p {
   font-weight: 400;
   font-size: 50px;
   color: white;
   letter-spacing: -0.024em;
 }
 
-.App section {
+.inicial section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 82px;
 }
 
-.App section input {
+.inicial section input {
   padding-left: 14px;
   width: 282px;
   height: 50px;
@@ -52,11 +52,11 @@
   border: none;
 }
 
-.App section input::placeholder{
+.inicial section input::placeholder{
   color: #adadad;
 }
 
-.App section select {
+.inicial section select {
   margin-top: 12px;
   padding-left: 14px;
   width: 282px;
@@ -69,7 +69,7 @@
   color: #adadad;
 }
 
-.App section button {
+.inicial section button {
   width: 282px; /* 141*/
   height: 62px; /*31*/
   margin-top: 12px;
