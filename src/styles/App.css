@@ -1,0 +1,86 @@
+.App-logo {
+  width: 110px;
+  height: 130px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s cubic-bezier(0.0, 0.0, 1.0, 1.0);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateY(1080deg);
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.App-header p {
+  font-weight: 400;
+  font-size: 50px;
+  color: white;
+  letter-spacing: -0.024em;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 82px;
+}
+
+.App section input {
+  padding-left: 14px;
+  width: 282px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #adadad;
+  border: none;
+}
+
+.App section input::placeholder{
+  color: #adadad;
+}
+
+.App section select {
+  margin-top: 12px;
+  padding-left: 14px;
+  width: 282px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  color: #adadad;
+}
+
+.App section button {
+  width: 282px; /* 141*/
+  height: 62px; /*31*/
+  margin-top: 12px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #D70900;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #D70900;
+}
+
+
