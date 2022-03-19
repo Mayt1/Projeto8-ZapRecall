@@ -1,11 +1,10 @@
-import TelaInicial from './TelaInicial';
+import './styles/style.css'
+
+//import TelaInicial from './TelaInicial';
+
 import Headers from './Headers';
 import Footer from './Footer';
-
-import './styles/reset.css'
-import './styles/sytle.css'
-
-
+import MainContent from './MainContent';
 
 //Aqui q vou criar a logica para trocar de telas da tela inicial para os outros componentes
 
@@ -16,6 +15,7 @@ function App() {
   return ( 
     <>
       <Headers />
+      <MainContent />
       <Footer />
     </>
   );
