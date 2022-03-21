@@ -7,7 +7,7 @@ import React from 'react';
 
 export default function Footer(props) {
     let done = 0;
-    let deckSize = 4;
+    let deckSize = 8;
 
     //botar um if q vai adicionar valores neste array de respostas e entao atualizar o footer, mesma coisa pro done
   return (
@@ -18,7 +18,6 @@ export default function Footer(props) {
           {props.respostas.map(respostas => <img src={respostas}/>)}
         </div>
       </footer>
-   
     </>
   );
 }

@@ -20,7 +20,7 @@ export default function TelaGame(props) {
   return (
       <>
         <Headers />
-        <MainContent />
+        <MainContent/>
         <Footer respostas={respostas}/>
       </>
         

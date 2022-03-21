@@ -16,8 +16,7 @@ export default function Flashcards(props) {
 
   const[selected, setSelected] = React.useState(false);
 
-  let imagemurl=props.questionIcon
-
+  let imagemurl=props.questionIcon //so muda localmente. n muda la no deck
 
   function isStatus (valor){
     if(valor === 1){
@@ -35,30 +34,16 @@ export default function Flashcards(props) {
     }
   }
 
+  //{props.respostas.map(respostas => <img src={respostas}/>)}
+
   const css = `question  ${selected ? isStatus(props.status, props.questionIcon) : ""} `
-    
-  function showCard(){
-    <section className='questionFront'>
-            <p> {props.frontCard}</p>
-            <img src={setinha} alt="virar"/>
-    </section>
-  }
 
   return (
     <>
         <section className={css} 
-          onClick={()=> setSelected(!selected)}
-          onMouseDown={()=> showCard()}>
+          onClick={()=> setSelected(!selected)}>
             <p>Pergunta {props.aux}</p>
             <img src={imagemurl} alt="icone"/>
-        </section>
-    </>
-  );
-}
-
-/*       <section className={css} onClick={()=> setSelected(!selected)}>
-            <p>Pergunta {props.aux}</p>
-            <img src={props.questionIcon} alt="icone"/>
         </section>
 
         <section className='questionFront'>
@@ -74,10 +59,6 @@ export default function Flashcards(props) {
               <button className='lembrei'>Zap!</button>
             </div>
         </section> 
-        
-        <section className='question question-atention'>
-            <p>Pergunta {nroQuestion}</p>
-            <img src={setao} alt="status"/>
-        </section>
-        
-        */
+    </>
+  );
+}
