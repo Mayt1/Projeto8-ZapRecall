@@ -16,17 +16,18 @@ export default function Flashcards(props) {
 
   const[selected, setSelected] = React.useState(false);
 
+  let imagemurl=props.questionIcon
+
 
   function isStatus (valor){
     if(valor === 1){
-      
-      //TODO:ativa uma funçao que muda o content
+      imagemurl = correct
       return "question-correct"
     } else if (valor === 2){
-      //TODO:ativa uma funçao que muda o content
+      imagemurl = incorrect
       return "question-incorrect"
     } else if (valor === 3){
-      //TODO:ativa uma funçao que muda o content
+      imagemurl = atention;
       return "question-atention"
     } else if (valor === 0){
       //TODO:ativa uma funçao que muda o content
@@ -36,11 +37,20 @@ export default function Flashcards(props) {
 
   const css = `question  ${selected ? isStatus(props.status, props.questionIcon) : ""} `
     
+  function showCard(){
+    <section className='questionFront'>
+            <p> {props.frontCard}</p>
+            <img src={setinha} alt="virar"/>
+    </section>
+  }
+
   return (
     <>
-        <section className={css} onClick={()=> setSelected(!selected)}>
+        <section className={css} 
+          onClick={()=> setSelected(!selected)}
+          onMouseDown={()=> showCard()}>
             <p>Pergunta {props.aux}</p>
-            <img src={props.questionIcon} alt="icone"/>
+            <img src={imagemurl} alt="icone"/>
         </section>
     </>
   );
