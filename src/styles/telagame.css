@@ -1,0 +1,37 @@
+main{
+    margin-top: 130px;
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    min-height: 110px;
+    padding: 25px 115px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer .resultado{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconesfooter {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

@@ -5,11 +5,9 @@ export default function Headers() {
   return (
     <>
       <header>
-        
         <img src={logopequeno} className="header-logo" alt="logo"/>
         <p>ZapRecall</p>
       </header>
-    
     </>
   );
 }
