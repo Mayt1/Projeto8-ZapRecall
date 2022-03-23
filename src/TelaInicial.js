@@ -2,6 +2,8 @@ import logo from './assets/logo.png'; // botei em uma variavel a minha imagem q 
 import './styles/inicial.css'; //importei meu estilo
 import {useState} from "react";
 
+import TelaGame from './TelaGame';
+
 
 export default function TelaInicial(props) {
   
@@ -25,7 +27,7 @@ export default function TelaInicial(props) {
         </section>
       </div>
     );
-  } else return <></>
+  } else return <><TelaGame /></>
 
 
 }
